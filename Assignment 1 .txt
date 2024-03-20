@@ -1,0 +1,68 @@
+Emmet: it is a plug in that allow us to write a pre define syntex to create the basic workflow of HTML, markup, CSS.
+
+
+
+difference between liberary and framework: 
+
+	1: liberary has a pre written fuction/objects/modules which our application code call for specific functionility 
+		where as in framework we have to write a code we dont have implimented function for us. a framework itsself a  application 
+	2: liberary tipically focused on narrow scope
+		where as framework need the whole envirement of code   
+	3: liberary can be eaily integrated to existing project to add some specific functionalty
+		we cannot integerate framework with already existing projects
+
+
+
+what is CDN?
+
+	A CDN is a Set of Codes Written and stored Somewhere at someone server. for using CDN we use tags like Script and provide the CDN url to that script by using src. Is full form is Content Delivery Network  
+	
+	we use CDN for using particualr funcationalty that is written by someone so we dont have to write that code.
+
+
+
+why is React known as React?
+
+ 	basically React is a javascript liberary. it is so powerful by itself. its helps us to maintinains the components and reusablilty of components.react were named react because they ment to help developer build the interface that is fast, and inteactive and reactive.
+
+
+
+whait is Crossorign?
+
+	crossorign sets the request mode to HTTP cores request. whenever the domain request the the another domain crossorign helps us to do that with secure communicaton with differenct orign.
+	corssorgin necessory to use if the orign of server is different. it will block the further requests  if not using corssorigin is not 	aviable in script.
+
+
+
+
+what is different between React and ReactDOM?
+	React is a core liberary
+		ReactDOM is a complimentry liberary for React.
+	react is all about components, elements
+		ReactDOM is a way of commmunicate React with Javascript DOM
+
+
+
+		
+Difference between react.development.js and react.production.js
+	React Development CDN use for development perpuse
+		React Production CDN is use for Production Perpuse
+	React Development CDN provides cleaner menagable code to easily understand dovelopers and gives features like hot reloading
+		Whereas the Production CDN is comprised the all code and HTML CSS to provide good performance in less file size
+
+
+
+
+What is async and defer?
+	async script fatch the script along with HTML parcing when Fatch is compleated Html Parsing stopes and exicuting the Script. html will againt start parsing until the exicuting of script is finshed
+		
+	defer script fatched the script along with HTML parsing and when the parsing finshish the script will executed
+
+
+
+
+
+
+
+
+
