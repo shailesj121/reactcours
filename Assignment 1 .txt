@@ -11,7 +11,6 @@ difference between liberary and framework:
 		we cannot integerate framework with already existing projects
 
 
-
 what is CDN?
 
 	A CDN is a Set of Codes Written and stored Somewhere at someone server. for using CDN we use tags like Script and provide the CDN url to that script by using src. Is full form is Content Delivery Network  
