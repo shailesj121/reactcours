@@ -1,0 +1,14 @@
+What is NPM?
+	npm is every thing bus not Node Pakage Manger
+	basically it manages packages.
+	its a biggest standard repository of all packages.
+What is Parcel/WebPack? why do we need it?
+	They are a Bundlers
+	it provide opetmized, comprised, fast performance code in a single js file
+	it is a powerfull liberary for react, using parcel make developer allow to use parcels powerfull features like hot Reloading, liver server, https access in localhost, parcel requires other modules to work.
+
+what is Parcel cache?
+	parcel cache is a folder that stores some secure files basically that files contains all cache files and help use to load server fast, basically parcels sotres the cache.
+
+What is NPX?
+	
