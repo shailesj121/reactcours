@@ -1,7 +1,6 @@
 Emmet: it is a plug in that allow us to write a pre define syntex to create the basic workflow of HTML, markup, CSS.
 
 
-
 difference between liberary and framework: 
 
 	1: liberary has a pre written fuction/objects/modules which our application code call for specific functionility 
