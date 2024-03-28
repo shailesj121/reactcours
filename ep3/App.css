@@ -1,0 +1,22 @@
+.header{
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header img{
+    width: 30px;
+    height: 100%;
+}
+
+.header input {
+    width: 60%;
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+body{
+    margin: 0px;
+}

@@ -11,4 +11,35 @@ what is Parcel cache?
 	parcel cache is a folder that stores some secure files basically that files contains all cache files and help use to load server fast, basically parcels sotres the cache.
 
 What is NPX?
+	npx executes the npm packages
+
+What is difference between the Dependencies and Devdependendies?
+	Dependencies are those packages that are requires to use in production 
+	Devdependencies are those dpepndiences that does note needes to push the code into production its doesnt have to do any thing with our main production code
+	
+What is Tree-shaking?
+	its is a module that helps to remove all the unused code which is taking a unwanted space
+
+What is hot module replacement?
+	this module helps to reload or webpage whenerver a code saves
+
+5 superpoer of parcel and describe any three
+	1: HMR 2: debugger 3: Tree-shaking  4: dev build, 5: Caching
+	so i have already explained tree-shaking,HMR, 
+	caching: this parcel module help to cacheing the code for us, so whenever the changes code save it reload the server even faster 
+
+What is .gitignore?
+	is is a file the stroes all the name of folder and files that should not be pushed in git repo its culd be anything like your sensetive data, node_modules, etc
+
+what is package.json ad package-lock.json?
+	package.json is configration for our NPM. it store the data that out NPM requires to install the dependencies and the version of that dependencies
+	package-lock.josn is store the exact version of each dependencies and devdependencies modules inside the  node_modules
+
+What is dist folder?
+	dist folder contains 3 main files the required to run our website that is HTML file, js file, css file
+	all the dependencies combined together in new js file contain by dist folders
+
+What is "browserlist"
+	this is a tool for configure the browser version use my many liberarys. 
+
 	
