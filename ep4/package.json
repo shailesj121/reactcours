@@ -1,18 +1,17 @@
 {
   "name": "ep4",
   "version": "1.0.0",
-  "description": "food ordering app",
+  "description": "this is a episod 4 where we will making a App uisng reactJs the concpet is online food odering app like swiggi",
   "scripts": {
     "start": "parcel index.html",
     "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "\\"
-  },
   "author": "Shailesh Bisht",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "font-awesome": "^4.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

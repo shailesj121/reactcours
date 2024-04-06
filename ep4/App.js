@@ -1,16 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Header from "./components/header.jsx";
-import Main from "./components/main.jsx";
-import Footer from "./components/footer.jsx";
+import React from "react"
+import ReactDOM from "react-dom/client"
+import Header from "./components/header.jsx"
+import Body from "./components/body.jsx"
+import Footer from "./components/footer.jsx"
+import "./App.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const App = ()=> (
     <>
-    <Header></Header>
-    <Main/>
+    <Header/>
+    <Body/>
     <Footer/>
     </>
 )
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<App />)
+root.render(<App/>)

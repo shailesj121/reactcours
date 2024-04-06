@@ -1,0 +1,14 @@
+.company-logo{
+    width: 110px;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    box-shadow: 0px 1px 10px lightgray;
+}
+body{
+    margin: 0px;
+}
+
