@@ -1,3 +1,4 @@
+
 .company-logo{
     width: 110px;
 }
@@ -12,3 +13,170 @@ body{
     margin: 0px;
 }
 
+.navigationheader li {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.foodcards {
+    max-width: 280px;
+    cursor: pointer;
+}
+
+.foodcards:hover{
+    scale: 1.01;
+}
+main{
+    margin-top: 20px;
+}
+
+main .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 26px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.cuisines{
+    overflow: hidden;
+    width: 200px;
+    text-wrap: nowrap;
+}
+
+.foodcards .footthumb {
+    object-fit: cover;
+    height: 169px;
+    border: 0;
+    border-radius: 20px;
+}
+
+.starrating{
+    display: flex;
+    align-items: center;
+}
+
+.starrating img{
+height: 15px;
+}
+
+.containers {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cardmenus {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    row-gap: 25px;
+}
+
+.cardFoodName{
+color: black;
+    font-weight: bolder;
+    font-family: inherit;
+}
+
+.headingone{
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.filterCard button {
+    border: 1px solid #d3d3d3;
+    border-radius: 15px;
+    margin-right: 10px;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+    display: inline-flex;
+    box-shadow: 0 0 10px #d3d3d35e;
+}
+
+.filterCard {
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.571);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+
+.inner-container-filter{
+    background: white;
+    border: 0;
+    border-radius: 20px;
+}
+
+.footer-container{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 20px;
+
+    padding-top: 40px;
+
+}
+
+footer h1 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+footer li{
+    line-height: 35px;
+}
+
+footer{
+    background-color: rgb(2, 6, 12);
+}
+
+.heading-search{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+.inner-container-filter {
+    padding: 15px;
+    position: relative;
+    display: flex;
+}
+
+.inner-container-filter ul li {
+    padding: 15px 20px;
+    font-weight: 600;
+}
+
+.inner-container-filter ul {
+    overflow-y: scroll;
+    height: 60vh;
+    padding-inline-end: 30px;
+    
+}
+
+.cancelbutton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.filter_option{
+    width: 80vh;
+}

@@ -1,18 +1,33 @@
-import React from "react"
+import React, { useState } from "react"
 import ReactDOM from "react-dom/client"
 import Header from "./components/header.jsx"
 import Body from "./components/body.jsx"
 import Footer from "./components/footer.jsx"
+import Filter from "./components/filter.jsx"
 import "./App.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const App = ()=> (
-    <>
-    <Header/>
-    <Body/>
-    <Footer/>
-    </>
-)
+
+
+
+const App = () => {
+
+    const [showBtn, setShowBtn] = useState(false);
+
+    function showfilter() {
+        showBtn ? setShowBtn(false) : setShowBtn(true);
+      }
+
+    return (
+        <>
+            <Header />
+            <Body showfilter={showfilter} />
+            <Footer />
+            {
+                showBtn ? <Filter showfilter={showfilter} /> : null
+            }
+        </>
+    )
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<App/>)
+root.render(<App />)
