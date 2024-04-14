@@ -1,9 +1,27 @@
+"use client";
 import data from "../data.json";
 import star from "../images/star.svg";
 import FilterCard from "./cardFilterButtons.jsx";
 import { CR_URL } from "../utils/constant.jsx";
+import React, { useState } from "react";
 
 const Body = ({ showfilter }) => {
+  const [sdata, setData] = useState(data);
+  const [removeCross, setRemoveCross] = useState(false);
+
+  function filterRating() {
+    let newdata = sdata.filter((datanew) => datanew.info.avgRating > 4.3);
+    setData(newdata);
+    setRemoveCross(true);
+    return;
+  }
+
+  function removeFilter(event) {
+    console.log("no");
+    setData(data);
+    setRemoveCross(false);
+  }
+
   return (
     <>
       <main>
@@ -15,26 +33,31 @@ const Body = ({ showfilter }) => {
             <input type="search" className="search" placeholder="search" />
           </div>
 
-          <FilterCard showfilter={showfilter} />
+          <FilterCard
+            showfilter={showfilter}
+            filterRating={filterRating}
+            removeCross={removeCross}
+            removeFilter={removeFilter}
+          />
 
           <div className="cardmenus">
-            {data.map((data) => {
-              if (data.info.availability.opened) {
+            {sdata.map((sdata) => {
+              if (sdata.info.availability.opened) {
                 return (
-                  <div key={data.info.id} className="foodcards">
+                  <div key={sdata.info.id} className="foodcards">
                     <img
                       width="400px"
                       className="footthumb"
-                      srcSet={`${CR_URL}${data.info.cloudinaryImageId}`}
+                      srcSet={`${CR_URL}${sdata.info.cloudinaryImageId}`}
                     />
                     <div className="p-3">
-                      <p className="cardFoodName">{data.info.name}</p>
+                      <p className="cardFoodName">{sdata.info.name}</p>
                       <p className="starrating">
                         <img srcSet={star} alt="" height="15px" />{" "}
-                        {data.info.avgRating}. {data.info.sla.slaString}
+                        {sdata.info.avgRating}. {sdata.info.sla.slaString}
                       </p>
                       <p className="cuisines">
-                        {data.info.cuisines.join(", ")}
+                        {sdata.info.cuisines.join(", ")}
                       </p>
                     </div>
                   </div>

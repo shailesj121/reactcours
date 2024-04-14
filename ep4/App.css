@@ -84,7 +84,7 @@ color: black;
     margin-bottom: 20px;
 }
 
-.filterCard button {
+.filterCard .button {
     border: 1px solid #d3d3d3;
     border-radius: 15px;
     margin-right: 10px;
@@ -93,6 +93,18 @@ color: black;
     gap: 10px;
     display: inline-flex;
     box-shadow: 0 0 10px #d3d3d35e;
+    cursor: pointer;
+}
+
+button {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 5px;
+}
+
+.filterCard .button img {
+    height: 20px;
 }
 
 .filterCard {

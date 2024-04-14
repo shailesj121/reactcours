@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react"
 import ReactDOM from "react-dom/client"
 import Header from "./components/header.jsx"
@@ -7,24 +8,17 @@ import Filter from "./components/filter.jsx"
 import "./App.css"
 
 
-
-
 const App = () => {
 
     const [showBtn, setShowBtn] = useState(false);
-
-    function showfilter() {
-        showBtn ? setShowBtn(false) : setShowBtn(true);
-      }
+    const showfilter = () => showBtn ? setShowBtn(false) : setShowBtn(true);
 
     return (
         <>
             <Header />
             <Body showfilter={showfilter} />
             <Footer />
-            {
-                showBtn ? <Filter showfilter={showfilter} /> : null
-            }
+            {showBtn ? <Filter showfilter={showfilter} /> : null}
         </>
     )
 }
