@@ -6,7 +6,7 @@ function Remove({ removeCross, removeFilter }) {
     <>
       {removeCross ? (
         <span onClick={removeFilter}>
-          <img src={cancelBtn} alt="" srcset={cancelBtn} />
+          <img src={cancelBtn} alt="" srcSet={cancelBtn} />
         </span>
       ) : null}
     </>

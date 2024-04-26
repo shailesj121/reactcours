@@ -1,0 +1,43 @@
+● is JSX mandatory for React?
+	No JSX is not mandatory for React app but JSX make write codes easier to understend to developer becaue of its HTML like structure of code.
+
+● is ES6 Mandatory for React? 
+	Bascially ES6 is a major update in Javascript, it includes many features to javascript, there are some features the React uses of ES6  like cosnt keyword, Arrow function, map object classes promises etc
+	that means React requires ES6 to use amke react app
+
+● {TitleComponent} vs {<TitleComponent/>} vs{<TitleComponent></TitleComponent>} in JSX
+	these are functional components execute methods accpect the {TitleComponent}.
+	{TitleComponent} is used to render the react elements
+	{<TitleComponent/>} an standalone instance of component
+	{<TitleComponent></TitleComponent>}  an component which can use as container for other components or standalone components
+
+● How can I write comments in JSX?
+		jus like we use in html there is a two ways of writing comment in the jsx first is inline comment and another is multiline comment
+		the syntax for inline comment is "// this is inline comment"
+		the syntax for multiline comment is "{* this is multi
+											* line comment
+											*}"
+
+●  What is <React.Fragment></React.Fragment> and <></> ?
+		Both are use to render multiple elements as we know that we only can use single element to render. so for render the multiple elements we use React Fragments is basicall a incapsulte the all elemnts inside a single react fragemtns <></> is nothing but a shortend fragments 
+
+● What is Virtual DOM?
+		Virtual DOM is a DOM for React. every time react component create the virtual dom will be created, it is a lightweight copy of Real DOM, after manipulating it only render the changed elements.
+
+● What is Reconciliation in React?
+		Reconciliation is a algorithem for making react faster, it  update Virtual DOM and then update the Real DOM with Optimized Update.
+
+● What is React Fiber?
+		React Fiber is a concept of reactJs to update the system UI faster and smoother.
+
+● Why we need keys in React? When do we need keys in React?
+		We need Keys in react to make our System UI More efficient. Keys are used when same component need to renders, keys helps to React algorithem work.
+
+ ● Can we use index as keys in React?
+		We can use index as Key only if there is not Unique Id for components, it is better to add index in keys then not using keys.
+
+ ● What is props in React? Ways to
+		Props is nothinng but a properties the we provides to components suppose when we render the component we add some props like "name= shailesh"  
+
+● What is a Config Driven UI ?
+		it is basically a making a Dynamic website. so the dynamic website is basically a website where the data coming dynamically and rendering to UI, all the data comes from backend , API,s 

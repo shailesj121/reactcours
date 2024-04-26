@@ -192,3 +192,59 @@ footer{
 .filter_option{
     width: 80vh;
 }
+
+.searchResult {
+    background-color: #fff;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 8px 0px lightgray;
+}
+
+.search_result-item:hover{
+    background-color: lightgray;
+    cursor: pointer;
+    
+}
+
+.search:focus{
+   width: 350px
+}
+
+.foodcards .imgpart {
+    background: #d3d3d3;
+    border: 0;
+    border-radius: 10px;
+    width: 280px;
+    height: 167px;
+}
+
+.foodcards .dummytext {
+    background: #d3d3d3;
+    border: 0;
+    border-radius: 10px;
+    height: 20px;
+    width: 280px;
+
+}
+
+.dummyContent, .dummytext{
+    margin-block: 10px;
+}
+
+.dummyButton{
+    height: 30px;
+    display: block;
+    background: lightgray;
+    border: 0;
+    border-radius: 15px;
+    width: 114px;
+    margin-bottom: 20px;
+}
+
+.dummyFilterCard{
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
