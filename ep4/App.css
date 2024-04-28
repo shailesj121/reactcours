@@ -247,4 +247,11 @@ footer{
     flex-wrap: wrap;
 }
 
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
 

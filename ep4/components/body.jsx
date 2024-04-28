@@ -1,4 +1,4 @@
-import data from "../data.json";
+// import data from "../data.json";
 import star from "../images/star.svg";
 import FilterCard from "./cardFilterButtons.jsx";
 import { CR_URL } from "../utils/constant.jsx";
@@ -8,9 +8,11 @@ import { fatchData } from "../utils/fatching.jsx";
 import { Dummy, DummyListing } from "./dummy.jsx";
 
 const Body = ({ showfilter }) => {
+  const [originalData, setOriginalData] = useState("")
   const [sdata, setData] = useState(null);
-  const [success, setSuccess] = useState("");
+  const [success, setSuccess] = useState(null);
   const [removeCross, setRemoveCross] = useState(false);
+  
 
   function filterRating() {
     let newdata = sdata.filter((datanew) => datanew.info.avgRating > 4.3);
@@ -20,15 +22,15 @@ const Body = ({ showfilter }) => {
   }
 
   function removeFilter(event) {
-    setData(data);
+    setData(originalData);
     setRemoveCross(false);
   }
 
   useEffect(() => {
     fatchData().then((data) => {
+      setOriginalData(data[0])
       setData(data[0]);
       setSuccess(data[1]);
-      console.log(data[0]);
     });
   }, []);
 
@@ -43,7 +45,7 @@ const Body = ({ showfilter }) => {
             <Search sdata={sdata} />
           </div>
 
-          {success == "success" ? (
+          {success? (
             <FilterCard
               showfilter={showfilter}
               filterRating={filterRating}
@@ -56,7 +58,7 @@ const Body = ({ showfilter }) => {
 
           <div className="cardmenus">
             {sdata ? (
-              success == "success" ? (
+              success? (
                 sdata.map((sdata) => {
                   if (sdata.info.availability.opened) {
                     return (

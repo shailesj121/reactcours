@@ -1,0 +1,46 @@
+● What is a Microservice?
+    A application that has individual services project for individual services called microservices. The perpuse of using microservices is to divide the project where developer could easily work on project. those services can be Backend service, UI services, Email notification services and many more, combining the whole service makes a Application.
+
+● What is Monolith architecture?
+    A Application where all the code is written in a Single servide. a single service include Frontend part, backend Part etc. there is no individial services are served. 
+
+● What is the difference between Monolith and Microservice?
+    Monolith:   ● it is a single servide application 
+                ● difficult to maintian and work on project. 
+    Microservices:  ● it is a small service has individual task to perfrom.
+                    ● easy to maintian and work on project.
+
+● Why do we need a useEffect Hook?
+    useEffect are the hooks that is use wastly in application, it is a react function use to run the execute ervery this a particulate dependency change.
+    we need a useEffect hook for fatching data. 
+    if we have to do somting after rendering the component we use useEffect.
+
+● What is Optional Chaining?
+    An oprtional chaining use to avoide get null, undefine, errors in method of object 
+    it is denote by "?" it is use while Accessing object methiod where we have not idea weather a method exist or not.
+
+● What is Shimmer UI?
+    have you are notice when you open any modern website like youtube, twitter, etc. when you open that application the ui renders and there is a dummy boxes in UI, yes that is shimmer UI, it is use the create the dummy of acutal content of cany thing like card, box, etc. the data take some time to fatch. so we duse dummy card till the actual data fetched, onces it done the acual data replaced with the dummy card.
+
+● What is the difference between JS expression and JS statement
+    basicaly the js expression can store the result in variable where as a Js statement is a statement it dost not return any value 
+
+● What is Conditional Rendering, explain with a code example
+    condition Rendering can be use by Js expression basically this rendring uses syntex like "?,:"
+    suppose we are fatching an API and we want to render some dummy data or message until the Api fatch and render it, in this condition we can use conditional rendering.
+
+    example:
+     sdata? "the data is present now" : "the data is yet to render"
+
+● What is CORS?
+    its stand for Cross Origin Resource Sharing.  
+    CORS allow us secure Cross origin request and tranfer the data between the browser and server.
+    it addresses the same origin policy (SOP). basically block all the request that are not coming from same origin.
+
+● What is async and await?
+    async is a function use to fatch API's it retune a promise and to handel the promise we use await. async function is a asyncronus function while fetching the function using await it stopes the further implimentation of code till the API compeletly fetched. 
+    now a days async function are binge mostly use because of the simplicity of using this function and manage that promises
+
+● What is the use of `const json = await data.json();` in getRestaurants()
+    so the json is variable name and await is uses to wait for the data to fatched and the data.Json() method use to only allow only fatched Json code data.
+
