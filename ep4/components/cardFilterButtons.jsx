@@ -1,4 +1,3 @@
-"use client";
 import filtersvg from "../images/filter.svg";
 import dropDown from "../images/dropdown.svg";
 import Remove from "../utils/Remove.jsx";

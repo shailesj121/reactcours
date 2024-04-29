@@ -1,4 +1,3 @@
-"use client";
 import cancleBtn from "../images/cancelBtn.svg";
 
 const Filter = ({ showfilter }) => (

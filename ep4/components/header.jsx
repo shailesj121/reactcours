@@ -6,10 +6,6 @@ import { useState } from "react";
 const Header = () => {
   const [isLogin, setIsLogin] = useState(false);
 
-  // const loginData = ()=> {
-  //   setIsLogin(true)
-  // }
-
   return (
     <>
       <header className="p-1">
