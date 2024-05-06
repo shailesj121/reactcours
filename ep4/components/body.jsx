@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import { fatchData } from "../utils/fatching.jsx";
 import { Dummy, DummyListing } from "./dummy.jsx";
 import FilterCard from "./cardFilterButtons.jsx";
+import Filter from "./filter.jsx"
 import { CR_URL } from "../utils/constant.jsx";
 import star from "../images/star.svg";
 import Search from "./search.jsx";
 
-const Body = ({ showfilter }) => {
+const Body = () => {
+  const [showBtn, setShowBtn] = useState(false);
   const [originalData, setOriginalData] = useState("");
   const [removeCross, setRemoveCross] = useState(false);
   const [success, setSuccess] = useState(null);
@@ -18,6 +20,8 @@ const Body = ({ showfilter }) => {
     setRemoveCross(true);
     return;
   }
+
+  const showfilter = () => showBtn ? setShowBtn(false) : setShowBtn(true);
 
   function removeFilter(event) {
     setData(originalData);
@@ -40,12 +44,12 @@ const Body = ({ showfilter }) => {
             <h1 className="headingone">
               Restaurants with online food delivery in Delhi
             </h1>
-            <Search sdata={sdata} />
+            <Search originalData={originalData} />
           </div>
 
           {success ? (
             <FilterCard
-              showfilter={showfilter}
+            showfilter={showfilter}
               filterRating={filterRating}
               removeCross={removeCross}
               removeFilter={removeFilter}
@@ -89,6 +93,7 @@ const Body = ({ showfilter }) => {
           </div>
         </div>
       </main>
+      {showBtn ? <Filter showfilter={showfilter} /> : null}
     </>
   );
 };

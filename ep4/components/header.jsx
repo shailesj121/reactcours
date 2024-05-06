@@ -2,6 +2,7 @@ import logo from "../images/logo.jpg";
 import homeicon from "../images/home.svg";
 import { Login, Logout } from "./buttons.jsx";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isLogin, setIsLogin] = useState(false);
@@ -23,13 +24,14 @@ const Header = () => {
           <div>
             <ul className="flex navigationheader">
               <li>
-                <div className="flex">
+                <div className="flex"><Link to="/">
                   <img width="20px" alt=" " src={homeicon} /> <p>Home</p>
+                  </Link>
                 </div>
               </li>
-              <li>About</li>
-              <li>contact</li>
-              <li>Cart</li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">contact</Link></li>
+              <li><Link to="/cart">Cart</Link></li>
               <li>
                 {isLogin ? (
                   <Logout loginData={setIsLogin} />

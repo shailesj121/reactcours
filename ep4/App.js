@@ -1,28 +1,21 @@
-import React, { useState } from "react"
+import React from "react"
 import ReactDOM from "react-dom/client"
 import Header from "./components/header.jsx"
-import Body from "./components/body.jsx"
 import Footer from "./components/footer.jsx"
-import Filter from "./components/filter.jsx"
 import "./App.css"
-import { createBrowserRouter, Outlet, RouterProvider, Outlet } from "react-router-dom"
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
 import About from "./components/About.jsx"
 import Contact from "./components/Contact.jsx"
 import Error from "./components/error/Error.jsx"
-
-
+import Body from "./components/body.jsx"
+import { createBrowserRouter } from "react-router-dom"
 
 const App = () => {
-
-    const [showBtn, setShowBtn] = useState(false);
-    const showfilter = () => showBtn ? setShowBtn(false) : setShowBtn(true);
-
     return (
         <>
             <Header />
-            <Outlet/>
+            <Outlet />
             <Footer />
-            {showBtn ? <Filter showfilter={showfilter} /> : null}
         </>
     )
 }
@@ -30,15 +23,15 @@ const App = () => {
 const appRouter = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        element: <App/>,
         children: [
             {
                 path: "/",
-                element: <Body/>,
+                element: <Body />,
             },
             {
                 path: "/contact",
-                element: <Contact/>,
+                element: <Contact />,
             },
             {
                 path: "/about",
@@ -49,5 +42,6 @@ const appRouter = createBrowserRouter([
     },
 
 ]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(<RouterProvider router={appRouter} />)

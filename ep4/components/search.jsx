@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-const Search = ({ sdata }) => {
+const Search = ({ originalData }) => {
   const [searchValue, setSearchValue] = useState("");
   const [searchResult, setSearchResult] = useState(false);
   const [focus, setFocus] = useState("show")
 
   function searchEvent(value) {
     setSearchValue(value);
-    setSearchResult(sdata.filter((event) => event.info.name.toLowerCase().match(value.toLowerCase())));
+    setSearchResult(originalData.filter((event) => event.info.name.toLowerCase().match(value.toLowerCase())));
   }
 
   const focusresult = ()=>{
